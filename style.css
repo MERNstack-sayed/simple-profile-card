@@ -1,0 +1,148 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aqua;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:768px) {
+    .team-members {
+        flex-direction: column;
+    }
+    
+}
+
+.team-members .team-member-card {
+    /* border: solid 1px rgb(6, 221, 114); */
+    border-radius: 12px;
+    max-width: 300px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-members .team-member-card .card-header {
+    margin: 0;
+    background-image: url(asset/bg_abusayed.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    height: 120px;
+    position: relative;
+}
+
+.team-members .team-member-card .card-img {
+    height: 120px;
+    width: 110px;
+    border: solid 0.3rem white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transform: translateY(50%);
+}
+
+.team-members .team-member-card .card-body {
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.team-members .team-member-card .card-body .member-name {
+    text-transform: uppercase;
+    color: rgb(15, 102, 15);
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.team-members .team-member-card .card-body .member-designation {
+    text-transform: capitalize;
+    color: rgb(16, 74, 97);
+    margin-top: -20px;
+}
+
+.team-members .team-member-card .card-body .member-description {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.team-members .team-member-card .card-footer {
+    padding: 15px;
+    background-color: azure;
+    border-radius: 12px;
+}
+
+.team-members .team-member-card .card-footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social .facebook {
+  color: #1877F2;  
+}
+
+.social .github {
+  color: #24292F;
+}
+
+.social .linkedin {
+  color: #0A66C2;
+}
+
+ .social a.threads i {
+      color: #000000;
+    }
+
+.team-members .team-member-card .card-footer .card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.team-members .team-member-card .card-footer .card-btn .contact {
+    background-color: rgb(59, 145, 59);
+    padding: 10px 15px;
+    width: 80px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.team-members .team-member-card .card-footer .card-btn .contact:hover {
+    background-color: rgb(55, 58, 56);
+}
+
+.team-members .team-member-card .card-footer .card-btn .portfolio {
+    background-color: rgb(34, 78, 223);
+    padding: 10px 15px;
+    width: 80px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.team-members .team-member-card .card-footer .card-btn .portfolio:hover {
+    background-color: rgb(55, 58, 56);
+}
